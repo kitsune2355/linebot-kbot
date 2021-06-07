@@ -315,7 +315,7 @@ app.post('/callback', line.middleware(config), (req, res) => {
     const payload = [
       {
         "type": "location",
-        "title": "location",
+        "title": filterItem[0].b_name,
         "address": filterItem[0].b_name, 
         "latitude": filterItem[0].b_lat,
         "longitude": filterItem[0].b_long
